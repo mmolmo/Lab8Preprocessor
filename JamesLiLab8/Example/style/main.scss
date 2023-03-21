@@ -10,6 +10,14 @@
   //includes the mixin for list format
   @include liformat;
 }
+
+.par{
+  //includes the mixin for paragraph format below list
+  @include parformat;
+  //padding for format
+  padding: $ulsize;
+}
+
 //includes the mixin for grid format
 @include grid;
 /*formats the grid item*/

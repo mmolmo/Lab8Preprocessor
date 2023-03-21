@@ -12,6 +12,7 @@
       li{
         //calls the lisize variable which is based on ulsize
         font-size: $lisize;
+        font-family: $lifont;
       }
     }
   .standard{
@@ -25,6 +26,33 @@
   }
 
 }
+ 
+@mixin parformat{
+  /*formats the paragraph below the list*/
+  span{
+    font-size: $parsize;
+    font-family: $parfont;
+  }
+  //color variations for the span general formatting
+  .parstandard{
+    color: $parcolor;
+  }
+  .pardiff{
+    //sets the color based on different color
+    color:$pardiffcolor;
+  }
+
+ //alternate formatting for span text, based on ul element
+  .siz{
+    color: $ulcolor;
+    font-size: $ulsize;
+  }
+  .col{
+    //sets a different color based on ulcolor
+    color: $ulcolor;
+  }
+}
+
 //grid mixin
 @mixin grid{
   /*media query for grid*/
